@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">News</string>
+
+    <string name="title_politics">Politics</string>
+    <string name="title_tech">Tech</string>
+    <string name="title_sports">Sports</string>
+</resources>
