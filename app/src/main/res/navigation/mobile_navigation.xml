@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.pishi.news.view.fragments.HomeFragment"
-        android:label="@string/title_home"
+        android:name="com.pishi.news.view.fragments.TechFragment"
+        android:label="@string/title_politics"
         tools:layout="@layout/fragment_politics" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.pishi.news.view.fragments.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:name="com.pishi.news.view.fragments.SportsFragment"
+        android:label="@string/title_tech"
         tools:layout="@layout/fragment_tech" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.pishi.news.view.fragments.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:name="com.pishi.news.view.fragments.PoliticsFragment"
+        android:label="@string/title_sports"
         tools:layout="@layout/fragment_sports" />
 </navigation>
