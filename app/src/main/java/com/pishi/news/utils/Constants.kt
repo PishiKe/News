@@ -8,6 +8,8 @@ object Constants {
     const val API_KEY : String = "apiKey"
 
     const val API_URL = "https://content.guardianapis.com/"
+    const val API_KEY_VALUE = "2e9ba958-d6ca-43d8-8b17-e6e8c2a0160f"
+
 
 
 
