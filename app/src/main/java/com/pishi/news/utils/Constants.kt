@@ -4,8 +4,12 @@ object Constants {
 
     const val POLITICS_API_ENDPOINT : String = "search?q=politics"
     const val TECH_API_ENDPOINT : String = "search?q=technology"
-    const val SPORTS_API_VAL : String = "search?=sports"
+    const val SPORTS_API_ENDPOINT : String = "search?=sports"
     const val API_KEY : String = "apiKey"
+
+    const val API_URL = "https://content.guardianapis.com/"
+
+
 
 data class Politics(
     val response: Response
