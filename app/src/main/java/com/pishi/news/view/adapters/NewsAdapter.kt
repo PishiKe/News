@@ -9,7 +9,7 @@ import com.pishi.news.model.entities.AllNews
 
 class NewsAdapter (val fragment : Fragment) : RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
 
-    private var newsList : List<AllNews> = listOf()
+    private var newsList : List<AllNews.Result> = listOf()
 
     class ViewHolder(view : NewsItemBinding) : RecyclerView.ViewHolder(view.root){
 
@@ -24,9 +24,11 @@ class NewsAdapter (val fragment : Fragment) : RecyclerView.Adapter<NewsAdapter.V
         return ViewHolder (binding)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder : ViewHolder, position: Int) {
 
         val news = newsList[position]
+
+        holder.tvNews.text = news.webTitle
 
     }
 

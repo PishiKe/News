@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.pishi.news.databinding.FragmentTechBinding
-import com.pishi.news.viewmodel.HomeViewModel
+import com.pishi.news.viewmodel.TechViewModel
 
 class TechFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var homeViewModel: TechViewModel
         private var _binding: FragmentTechBinding? = null
 
     // This property is only valid between onCreateView and
@@ -24,7 +24,7 @@ class TechFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this).get(TechViewModel::class.java)
 
         _binding = FragmentTechBinding.inflate(inflater, container, false)
 
