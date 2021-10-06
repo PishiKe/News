@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView
     android:id="@+id/cv_news_item"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_208sdp"
+    android:layout_height="@dimen/_70sdp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     app:cardCornerRadius="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -11,18 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <ImageView
-        android:id="@+id/iv_news"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_140sdp"
-        android:layout_margin="@dimen/_12sdp"
-        xmlns:tools="http://schemas.android.com/tools"
-        tools:src=""/>
+
     
     <TextView
         android:id="@+id/tv_news"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_32sdp"
+        android:layout_height="@dimen/_50sdp"
         android:layout_margin="@dimen/_12sdp"
         />
 

@@ -1,12 +1,11 @@
 package com.pishi.news.model.entities
 
-object News {
+object AllNews {
 
     data class NewsList (
 
         val news :List<News>
     )
-
 
     data class News(
         val response: Response

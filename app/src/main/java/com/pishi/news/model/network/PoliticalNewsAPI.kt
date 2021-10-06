@@ -10,7 +10,6 @@ interface PoliticalNewsAPI {
 
     fun getPoliticalNews(
         @Query (Constants.API_KEY) apiKey : String,
-        @Query ()
-
+        @Query (Constants.PAGE_SIZE) number : Int
     )
 }
