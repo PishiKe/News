@@ -1,24 +1,24 @@
 package com.pishi.news.model.network
 
-import com.pishi.news.model.entities.AllNews
 import com.pishi.news.utils.Constants
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
-import io.reactivex.rxjava3.core.Observable
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class PoliticalNewsApiService {
+object ServiceBuilder{
 
-    private val api =Retrofit.Builder().baseUrl(Constants.BASE_URL)
+    private val client = OkHttpClient.Builder().build()
+
+    private val api = Retrofit.Builder()
+        .baseUrl(Constants.BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
+        .client(client)
         .build()
         .create(PoliticalNewsAPI::class.java)
 
-    fun getPoliticalNews() : Observable<AllNews.NewsList>{
-
-        return api.getPoliticalNews(Constants.API_KEY_VALUE,
-                Constants.PAGE_SIZE_VALUE,
-                Constants.FORMAT_VALUE)
+    fun buildService (): PoliticalNewsAPI{
+        return api
     }
 }

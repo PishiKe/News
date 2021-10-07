@@ -1,34 +1,25 @@
 package com.pishi.news.model.entities
 
 object  AllNews {
-
-    data class NewsList(
-    val response: Response
-)
-
-data class Response(
-    val currentPage: Int,
-    val orderBy: String,
-    val pageSize: Int,
-    val pages: Int,
-    val results: List<Result>,
-    val startIndex: Int,
+data class NewsList(
+    val articles: List<Article>,
     val status: String,
-    val total: Int,
-    val userTier: String
+    val totalResults: Int
 )
 
-data class Result(
-    val apiUrl: String,
+data class Article(
+    val author: String,
+    val content: String,
+    val description: String,
+    val publishedAt: String,
+    val source: Source,
+    val title: String,
+    val url: String,
+    val urlToImage: String
+)
+
+data class Source(
     val id: String,
-    val isHosted: Boolean,
-    val pillarId: String,
-    val pillarName: String,
-    val sectionId: String,
-    val sectionName: String,
-    val type: String,
-    val webPublicationDate: String,
-    val webTitle: String,
-    val webUrl: String
-    )
+    val name: String
+)
 }

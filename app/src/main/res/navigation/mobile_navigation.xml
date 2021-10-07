@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_politics">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_politics"
         android:name="com.pishi.news.view.fragments.TechFragment"
         android:label="@string/title_politics"
         tools:layout="@layout/fragment_politics" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_tech"
         android:name="com.pishi.news.view.fragments.SportsFragment"
         android:label="@string/title_tech"
         tools:layout="@layout/fragment_tech" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_sports"
         android:name="com.pishi.news.view.fragments.PoliticsFragment"
         android:label="@string/title_sports"
         tools:layout="@layout/fragment_sports" />
